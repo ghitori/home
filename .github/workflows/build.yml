@@ -45,11 +45,13 @@ jobs:
           path: dist
       - name: Zip Website
         run: |
-          zip -r Home.zip dist
+          cd dist
+          zip -r Home.zip *
       - name: Release Website
         uses: softprops/action-gh-release@v2
-        tag_name: Dev
-        name: Dev
-        files: |
-          Home.zip
+        with:
+          tag_name: Dev
+          name: Dev
+          files: |
+            dist/Home.zip
 
