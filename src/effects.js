@@ -152,7 +152,7 @@ function getRandom(option) {
 	return ret;
 }
 
-export const startSakura = () => {
+export function startSakura() {
 
 	requestAnimationFrame = window.requestAnimationFrame ||
 		window.mozRequestAnimationFrame ||
@@ -223,5 +223,5 @@ function stopp() {
 	}
 }
 		
-		
+startSakura();
 

@@ -34,7 +34,6 @@
 </template>
 
 <script setup>
-import { startSakura } from "@/utils/effects.js";
 import { helloInit, checkDays } from "@/utils/getTime.js";
 import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
